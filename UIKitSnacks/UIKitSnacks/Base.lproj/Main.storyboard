@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -63,13 +63,22 @@
                                                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                                                             <color key="baseForegroundColor" name="Text"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="removeItemBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="ZhH-kH-9ri"/>
+                                                                        </connections>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OP-1y-c0q">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBT-MB-Ac3">
                                                                         <rect key="frame" x="44" y="0.0" width="44" height="44"/>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                         <color key="textColor" name="Text"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                                                        <connections>
+                                                                            <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ori-F9-Ca7"/>
+                                                                            <action selector="editingEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="QjA-bZ-dLm"/>
+                                                                            <action selector="itemsCountDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="gdp-jN-epp"/>
+                                                                            <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="JOX-qS-zvS"/>
+                                                                        </connections>
+                                                                    </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3p-rv-EeU">
                                                                         <rect key="frame" x="88" y="0.0" width="44" height="44"/>
                                                                         <constraints>
@@ -81,6 +90,9 @@
                                                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                                                             <color key="baseForegroundColor" name="Text"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="addItem:" destination="BYZ-38-t0r" eventType="touchDown" id="4d3-Dc-5Yr"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -144,6 +156,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zYG-th-FWO" secondAttribute="trailing" constant="20" id="Een-mx-9BC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="items" destination="SBT-MB-Ac3" id="Eqn-W4-pYW"/>
+                        <outlet property="price" destination="ajK-rY-AwL" id="Vtr-FJ-AT7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
