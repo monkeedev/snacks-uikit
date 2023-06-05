@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		6E24FB9A2A29F3D10030497C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24FB992A29F3D10030497C /* AppDelegate.swift */; };
 		6E24FB9C2A29F3D10030497C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24FB9B2A29F3D10030497C /* SceneDelegate.swift */; };
-		6E24FB9E2A29F3D10030497C /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24FB9D2A29F3D10030497C /* ShopViewController.swift */; };
+		6E24FB9E2A29F3D10030497C /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24FB9D2A29F3D10030497C /* CardViewController.swift */; };
 		6E24FBA12A29F3D10030497C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E24FB9F2A29F3D10030497C /* Main.storyboard */; };
 		6E24FBA32A29F3D20030497C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E24FBA22A29F3D20030497C /* Assets.xcassets */; };
 		6E24FBA62A29F3D20030497C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E24FBA42A29F3D20030497C /* LaunchScreen.storyboard */; };
-		6E24FBAE2A29F73B0030497C /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24FBAD2A29F73B0030497C /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E24FB962A29F3D10030497C /* UIKitSnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E24FB992A29F3D10030497C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E24FB9B2A29F3D10030497C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E24FB9D2A29F3D10030497C /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		6E24FB9D2A29F3D10030497C /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		6E24FBA02A29F3D10030497C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E24FBA22A29F3D20030497C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E24FBA52A29F3D20030497C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E24FBA72A29F3D20030497C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E24FBAD2A29F73B0030497C /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +58,7 @@
 			children = (
 				6E24FB992A29F3D10030497C /* AppDelegate.swift */,
 				6E24FB9B2A29F3D10030497C /* SceneDelegate.swift */,
-				6E24FB9D2A29F3D10030497C /* ShopViewController.swift */,
-				6E24FBAD2A29F73B0030497C /* CardViewController.swift */,
+				6E24FB9D2A29F3D10030497C /* CardViewController.swift */,
 				6E24FB9F2A29F3D10030497C /* Main.storyboard */,
 				6E24FBA22A29F3D20030497C /* Assets.xcassets */,
 				6E24FBA42A29F3D20030497C /* LaunchScreen.storyboard */,
@@ -141,8 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E24FBAE2A29F73B0030497C /* CardViewController.swift in Sources */,
-				6E24FB9E2A29F3D10030497C /* ShopViewController.swift in Sources */,
+				6E24FB9E2A29F3D10030497C /* CardViewController.swift in Sources */,
 				6E24FB9A2A29F3D10030497C /* AppDelegate.swift in Sources */,
 				6E24FB9C2A29F3D10030497C /* SceneDelegate.swift in Sources */,
 			);
